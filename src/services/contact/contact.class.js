@@ -44,9 +44,8 @@ const validateAndSanitize = (key, value) => {
 const sendMail = (name, email, areaCode, phoneNumber, contactPreference, msg) => {
   const contactInfo = `${name} | +55 ${areaCode} ${phoneNumber} | Preferência de contato: ${contactPreference}`
   return SendGridMail.send({
-    // to: 'oi@clarific.com.br',
-    to: 'rodrigovcortezi@gmail.com',
-    from: 'rodrigo@clarific.com.br',
+    to: 'oi@clarific.com.br',
+    from: 'contactform@clarific.com.br',
     reply_to: email,
     subject: `Website: Formulário de contato [${name}]`,
     text: contactInfo + '\n\n' + msg
