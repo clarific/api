@@ -1,4 +1,5 @@
 /* eslint-disable no-console */
+require('newrelic')
 const logger = require('./logger')
 const app = require('./app')
 const port = app.get('port')
