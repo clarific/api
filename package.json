@@ -1,0 +1,69 @@
+{
+  "name": "test",
+  "description": "",
+  "version": "0.0.0",
+  "homepage": "",
+  "private": true,
+  "main": "src",
+  "keywords": [
+    "feathers"
+  ],
+  "author": {
+    "name": "Rodrigo Villardi Cortezi",
+    "email": "rodrigovcortezi@gmail.com"
+  },
+  "contributors": [],
+  "bugs": {},
+  "directories": {
+    "lib": "src",
+    "test": "test/",
+    "config": "config/"
+  },
+  "engines": {
+    "node": "12.x",
+    "yarn": ">= 0.18.0"
+  },
+  "scripts": {
+    "test": "yarn run lint && yarn run mocha",
+    "lint": "standard",
+    "dev": "nodemon src/",
+    "start": "node src/",
+    "mocha": "mocha test/ --recursive --exit"
+  },
+  "standard": {
+    "env": [
+      "mocha"
+    ],
+    "ignore": []
+  },
+  "dependencies": {
+    "@feathersjs/authentication": "^4.5.1",
+    "@feathersjs/authentication-local": "^4.5.1",
+    "@feathersjs/authentication-oauth": "^4.5.1",
+    "@feathersjs/configuration": "^4.5.1",
+    "@feathersjs/errors": "^4.5.1",
+    "@feathersjs/express": "^4.5.1",
+    "@feathersjs/feathers": "^4.5.1",
+    "@feathersjs/transport-commons": "^4.5.2",
+    "@sendgrid/mail": "^6.5.5",
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "feathers-mongoose": "^8.3.0",
+    "helmet": "^3.21.2",
+    "http-proxy-middleware": "^1.0.3",
+    "mongodb": "3.2.3",
+    "mongodb-core": "^3.2.7",
+    "mongoose": "^5.8.13",
+    "serve-favicon": "^2.5.0",
+    "validator": "^13.0.0",
+    "winston": "^3.0.0",
+    "xss-filters": "^1.2.7"
+  },
+  "devDependencies": {
+    "axios": "^0.19.2",
+    "mocha": "^7.0.1",
+    "nodemon": "^2.0.2",
+    "standard": "^14.3.3"
+  }
+}
